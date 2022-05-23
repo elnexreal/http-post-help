@@ -1,0 +1,24 @@
+<head>
+    <title>Post requests</title>
+</head>
+
+<script>
+    // Initialize the post request
+    const Http = new XMLHttpRequest();
+
+    // Define the URL
+    const url =
+        'URL AND PARAMS (EXAMPLE: https://api.github.com/users/elnexreal/repos)';
+
+    // Set-up the method and URL
+    Http.open("GET", url);
+
+    // Send the request
+    Http.send();
+
+    // Wait for the response
+    Http.onreadystatechange = (e) => {
+        // Logs the response
+        console.log(Http.responseText);
+    }
+</script>
